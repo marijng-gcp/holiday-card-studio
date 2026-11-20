@@ -1,0 +1,22 @@
+# Python & uv
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Local secrets & deploy-time event branding
+.env
+theme_config.json
+*.pem
+*.key
+
+# Local SQLite session DB & generated artifacts
+data/
+*.db
+*.sqlite*
+
+# Terraform state
+deployment/terraform/.terraform/
+deployment/terraform/*.tfstate*
+deployment/terraform/*.tfvars
